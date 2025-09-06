@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{c1437efe-b21e-447a-be33-f37d96748c37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{1fcc3357-919a-4119-a874-dfb696835c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\GameLoop">
+      <UniqueIdentifier>{ec0b0bc3-8bd9-4c99-8b0b-2ea3b95f5785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Debug">
+      <UniqueIdentifier>{f45ae2c6-7a29-454b-9416-4478c960ed1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Debug\Log">
+      <UniqueIdentifier>{b7a98f04-56c9-4865-b976-9e31c9825aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\define">
+      <UniqueIdentifier>{10c7e383-74ea-4652-aefb-073c91227679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\define\debug">
+      <UniqueIdentifier>{01981671-1510-4273-879b-fdd85b92716d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene">
+      <UniqueIdentifier>{71b18d8d-5876-4a4f-8628-8e5f9ef9fc86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene\debug">
+      <UniqueIdentifier>{557267a4-d208-4063-89ca-588c56cd3a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene\base">
+      <UniqueIdentifier>{3910d1d1-db6c-4648-86ba-4da59c2cfcc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\input">
+      <UniqueIdentifier>{e969f416-16f5-4344-9b31-14764a249ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\fps,time">
+      <UniqueIdentifier>{74e78201-4d0d-4d08-aaad-1cb8e693f8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\config">
+      <UniqueIdentifier>{362b8653-2d22-49ae-a583-eb3496bfc27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\random">
+      <UniqueIdentifier>{c751136f-ef6d-4ef2-b223-ad5f44b86066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\resource">
+      <UniqueIdentifier>{81120f50-20f8-499f-9b48-65e8cdcd2855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\resource\texture">
+      <UniqueIdentifier>{7cc2ec91-7b02-41b8-a059-8e1af981b272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\resource\sound">
+      <UniqueIdentifier>{e7416030-56d4-49eb-9b57-42a8c79ca283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\valueTypes">
+      <UniqueIdentifier>{261be889-0db3-4fad-9e83-b7c00c99d672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\status">
+      <UniqueIdentifier>{daa7ed46-412f-4ecc-a2d0-8b60605b7d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\define\color">
+      <UniqueIdentifier>{83f554b4-cf83-45cf-b8c4-43f5ceaf587a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\sound">
+      <UniqueIdentifier>{fb603782-ec53-4a81-94dc-0a601bd51dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Save">
+      <UniqueIdentifier>{bbf8fa8f-c058-494f-b32b-7c488bd03646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\transform">
+      <UniqueIdentifier>{e4a24005-8a9b-4bee-8d3b-1059bcef736f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS">
+      <UniqueIdentifier>{627e95ae-b0cf-406c-a003-215d7e0f3528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\GameObject">
+      <UniqueIdentifier>{a029b837-2f1b-4180-9617-7c5897ee24a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component">
+      <UniqueIdentifier>{76647581-5af1-45bc-97fe-dac37ab80956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component\Base">
+      <UniqueIdentifier>{ebee0720-ef23-43d0-8d11-27d18266acaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component\Rigid">
+      <UniqueIdentifier>{9da7a768-a083-4f9e-9b74-0cdaeef381a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map">
+      <UniqueIdentifier>{0b4df74f-4733-47e2-84a2-94c2e06816c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\!Test">
+      <UniqueIdentifier>{32407241-c037-4438-af2a-cfcfc0b4487a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\!Test\!Player">
+      <UniqueIdentifier>{82f0af35-1edb-4ae0-9ec5-3e2de46f1506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\Tile">
+      <UniqueIdentifier>{6f99953e-75fe-4819-b485-da437a26caf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\MapData">
+      <UniqueIdentifier>{a320815d-cc7a-4d61-9a06-f8ff8731e92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\MapLoader">
+      <UniqueIdentifier>{71486d12-c1c4-4ee7-a9ac-5cdd2b159544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\MapRender">
+      <UniqueIdentifier>{bc655f90-6eee-4145-a1df-13979c2da810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Camera">
+      <UniqueIdentifier>{1d5958fe-b59a-4599-a4a3-a91c456765ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\ResourceHandle">
+      <UniqueIdentifier>{a14ba241-551c-4d7d-addf-69f0494715a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\tinyxml12">
+      <UniqueIdentifier>{949e1ade-b2ae-4512-aa15-99671c68d75a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\Manager">
+      <UniqueIdentifier>{7f02a4eb-1bae-4e67-a17c-e38039701088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Math2D">
+      <UniqueIdentifier>{78dce810-2d72-4a0b-9a06-342db5e60288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component\collider">
+      <UniqueIdentifier>{5c45a9d2-0353-4bf0-9663-51191b841eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects">
+      <UniqueIdentifier>{5b1892c1-f0b0-4ef5-a396-a20388024845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player">
+      <UniqueIdentifier>{629073a8-6b52-4674-ba16-e51643251e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy">
+      <UniqueIdentifier>{d7d26a8c-dfca-4fb9-8a15-d3cf7bad9329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component\system">
+      <UniqueIdentifier>{267a26a2-1ee5-493b-b5d2-76dd9afb50e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\singleton">
+      <UniqueIdentifier>{055c5db6-a384-4cb8-8028-185c6af60942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\move">
+      <UniqueIdentifier>{10c8aca5-f15b-40ab-a4ff-406c7e10879d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\jump">
+      <UniqueIdentifier>{8ecdbcca-eedc-4ba1-98e9-e141c9bc64eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\state">
+      <UniqueIdentifier>{33aa5d6f-5f13-48a3-b346-836b391a6f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\dive wire">
+      <UniqueIdentifier>{0b746ea0-c1cb-45ad-8efa-e6c90a7806e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function">
+      <UniqueIdentifier>{f98a73aa-0140-42df-93e2-4fe388bae768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\sword">
+      <UniqueIdentifier>{f7945283-84c8-44f7-ab67-bfe7292859d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\GameObject\manager">
+      <UniqueIdentifier>{92f9dcc0-ded6-4642-96c2-1c434c7b5855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\component">
+      <UniqueIdentifier>{a164be00-61bb-4b89-aa99-703ee07202e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\animation">
+      <UniqueIdentifier>{17c842f2-0f02-4e26-a827-a646686fb41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\DrawMgr">
+      <UniqueIdentifier>{02246330-3737-4ba2-af48-968730de6715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\entity tag">
+      <UniqueIdentifier>{574cd4ee-f840-46a6-99d9-5fab865e1117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\GameObject\tag">
+      <UniqueIdentifier>{a57872de-0292-4653-ac7e-f3b00d59e706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Hit">
+      <UniqueIdentifier>{90ac5643-5d31-490d-8497-9da898cf70e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\status">
+      <UniqueIdentifier>{824a692a-9333-4213-a091-a967b8f9de77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\UI">
+      <UniqueIdentifier>{9a5937ff-1db3-47a9-bfd1-69ada5d72908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss">
+      <UniqueIdentifier>{1795d0a8-3c9d-4d42-a62d-8f3ba8a48a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\state">
+      <UniqueIdentifier>{a4085a04-32a9-4546-8b01-b1e6218de0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Render">
+      <UniqueIdentifier>{0fb44008-448b-42b5-9a68-a7994f091dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Laser">
+      <UniqueIdentifier>{bdc2f1e3-dfde-4bc7-a7f1-389433ba94fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Sickle">
+      <UniqueIdentifier>{1983548c-2199-4694-8278-05fe800740d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\trailbeam">
+      <UniqueIdentifier>{38bed87c-4119-40e7-a7b9-de0396a2d908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene\Title">
+      <UniqueIdentifier>{64d9fc9a-0721-458a-81b3-eeb4c1b751a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\effect">
+      <UniqueIdentifier>{0222e3c0-4438-4b91-a314-3efeb3ba8395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\button">
+      <UniqueIdentifier>{ec5a1ef9-55cc-4045-8d91-ec32e9fba0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene\tutorial">
+      <UniqueIdentifier>{f1613fea-ccee-4806-811c-13ee1bf86b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene\BossStage">
+      <UniqueIdentifier>{99f56a0d-e1ab-4cf7-b991-1f887d238f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\StandBot">
+      <UniqueIdentifier>{c731d172-4fca-4b36-b9fb-750c0f29fae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\StandBot\Render">
+      <UniqueIdentifier>{9d2f4fcc-4e68-4050-a1ec-e3f4bd7ec20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\component\BoxRender">
+      <UniqueIdentifier>{ed081e9f-b27c-41f4-a942-e3f576fb6ff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\PointSaver">
+      <UniqueIdentifier>{9c27ef67-cb6c-4c3d-ae68-20a81e40cbc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Goal">
+      <UniqueIdentifier>{0e4d4170-d85c-4280-bcb8-3aa24ac40a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\Gun">
+      <UniqueIdentifier>{6ed570c8-b9ea-4b80-8c1e-e72a14c10d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\StandBot\Factory">
+      <UniqueIdentifier>{d2dfc732-eaa6-4455-bc67-af2a1a97e035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\normal">
+      <UniqueIdentifier>{4994d43b-99f9-464e-a3c8-d21c6bd80613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\SwingWIre">
+      <UniqueIdentifier>{5893d729-9102-4c01-9105-02511cc265e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="program\GameManager.h">
+      <Filter>system\GameLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="program\debugDef.h">
+      <Filter>system\define\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DebugSceneNum.h">
+      <Filter>system\define\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DebugScene.h">
+      <Filter>system\scene\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="program\sceneBase.h">
+      <Filter>system\scene\base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\input.h">
+      <Filter>system\input</Filter>
+    </ClInclude>
+    <ClInclude Include="program\RemFPS.h">
+      <Filter>system\fps,time</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Time.h">
+      <Filter>system\fps,time</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Random.h">
+      <Filter>system\random</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SoundResource.h">
+      <Filter>system\resource\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SoundResourceMng.h">
+      <Filter>system\resource\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\TextureResource.h">
+      <Filter>system\resource\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="program\TextureResourceMng.h">
+      <Filter>system\resource\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="program\flag.h">
+      <Filter>system\valueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Color.h">
+      <Filter>system\valueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="program\hp.h">
+      <Filter>system\status</Filter>
+    </ClInclude>
+    <ClInclude Include="program\StatusAlias.h">
+      <Filter>system\status</Filter>
+    </ClInclude>
+    <ClInclude Include="program\power.h">
+      <Filter>system\status</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SystemConfig.h">
+      <Filter>system\config</Filter>
+    </ClInclude>
+    <ClInclude Include="program\GetColor.h">
+      <Filter>system\define\color</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SoundManager.h">
+      <Filter>system\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Sound.h">
+      <Filter>system\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SoundType.h">
+      <Filter>system\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SoundPathTable .h">
+      <Filter>system\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SaveData.h">
+      <Filter>system\Save</Filter>
+    </ClInclude>
+    <ClInclude Include="program\transform.h">
+      <Filter>system\transform</Filter>
+    </ClInclude>
+    <ClInclude Include="program\GameObject.h">
+      <Filter>system\ECS\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Component.h">
+      <Filter>system\ECS\Component\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DrawableComp.h">
+      <Filter>system\ECS\Component\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\RigidbodyComp.h">
+      <Filter>system\ECS\Component\Rigid</Filter>
+    </ClInclude>
+    <ClInclude Include="program\TestPlayer.h">
+      <Filter>system\!Test\!Player</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Tile.h">
+      <Filter>system\map\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MapData.h">
+      <Filter>system\map\MapData</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MapLoader.h">
+      <Filter>system\map\MapLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MapRender.h">
+      <Filter>system\map\MapRender</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Camera.h">
+      <Filter>system\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MapResHandle.h">
+      <Filter>system\map\ResourceHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MapManager.h">
+      <Filter>system\map\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Rect.h">
+      <Filter>system\Math2D</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ColliderComp.h">
+      <Filter>system\ECS\Component\collider</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Player.h">
+      <Filter>Game\GameObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="program\moveSystem.h">
+      <Filter>system\ECS\Component\system</Filter>
+    </ClInclude>
+    <ClInclude Include="program\singleton.h">
+      <Filter>system\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="program\GameObjectMgr.h">
+      <Filter>system\ECS\GameObject\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="program\InputMoveComp.h">
+      <Filter>Game\GameObjects\Player\move</Filter>
+    </ClInclude>
+    <ClInclude Include="program\JumpComp.h">
+      <Filter>Game\GameObjects\Player\jump</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerState.h">
+      <Filter>Game\GameObjects\Player\state</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerStateController.h">
+      <Filter>Game\GameObjects\Player\state</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DebugLog.h">
+      <Filter>system\Debug\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="program\dive wire.h">
+      <Filter>Game\GameObjects\Player\dive wire</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DiveWireController.h">
+      <Filter>Game\GameObjects\Player\dive wire</Filter>
+    </ClInclude>
+    <ClInclude Include="program\vector2d.h">
+      <Filter>system\Math2D</Filter>
+    </ClInclude>
+    <ClInclude Include="program\sword.h">
+      <Filter>Game\GameObjects\Player\sword</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Circle.h">
+      <Filter>system\Math2D</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Anim2D.h">
+      <Filter>system\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerRender.h">
+      <Filter>Game\GameObjects\Player\DrawMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="program\GameObjectTag.h">
+      <Filter>Game\GameObjects\entity tag</Filter>
+    </ClInclude>
+    <ClInclude Include="program\tag.h">
+      <Filter>system\ECS\GameObject\tag</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Hit.h">
+      <Filter>system\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="program\health.h">
+      <Filter>Game\GameObjects\status</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerUi.h">
+      <Filter>Game\GameObjects\Player\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ui_health.h">
+      <Filter>Game\GameObjects\Player\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="program\BossState.h">
+      <Filter>Game\GameObjects\Enemy\Boss\state</Filter>
+    </ClInclude>
+    <ClInclude Include="program\BossStateController.h">
+      <Filter>Game\GameObjects\Enemy\Boss\state</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Boss.h">
+      <Filter>Game\GameObjects\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="program\BossRender.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SwordController.h">
+      <Filter>Game\GameObjects\Player\sword</Filter>
+    </ClInclude>
+    <ClInclude Include="program\BossLaser.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Laser</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Scythe.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Sickle</Filter>
+    </ClInclude>
+    <ClInclude Include="program\trailbeam.h">
+      <Filter>Game\GameObjects\Enemy\Boss\trailbeam</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Title.h">
+      <Filter>system\scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Particle .h">
+      <Filter>system\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="program\BoxButton.h">
+      <Filter>system\button</Filter>
+    </ClInclude>
+    <ClInclude Include="program\TutorialScene.h">
+      <Filter>system\scene\tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="program\BossScene.h">
+      <Filter>system\scene\BossStage</Filter>
+    </ClInclude>
+    <ClInclude Include="program\StandingBot.h">
+      <Filter>Game\GameObjects\Enemy\StandBot</Filter>
+    </ClInclude>
+    <ClInclude Include="program\StandingBotRender.h">
+      <Filter>Game\GameObjects\Enemy\StandBot\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="program\HitBOxRenderComp.h">
+      <Filter>Game\GameObjects\component\BoxRender</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PointSaver.h">
+      <Filter>system\PointSaver</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Goal.h">
+      <Filter>Game\GameObjects\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Gun.h">
+      <Filter>Game\GameObjects\Player\Gun</Filter>
+    </ClInclude>
+    <ClInclude Include="program\StandingFactory.h">
+      <Filter>Game\GameObjects\Enemy\StandBot\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="program\NormalEnemy.h">
+      <Filter>Game\GameObjects\Enemy\normal</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SwingWire.h">
+      <Filter>Game\GameObjects\Player\SwingWIre</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="program\GameManager.cpp">
+      <Filter>system\GameLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="program\DebugScene.cpp">
+      <Filter>system\scene\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="program\input.cpp">
+      <Filter>system\input</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Color.cpp">
+      <Filter>system\valueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Sound.cpp">
+      <Filter>system\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="program\SoundManager.cpp">
+      <Filter>system\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="program\transform.cpp">
+      <Filter>system\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="program\GameObject.cpp">
+      <Filter>system\ECS\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="program\RigidbodyComp.cpp">
+      <Filter>system\ECS\Component\Rigid</Filter>
+    </ClCompile>
+    <ClCompile Include="program\TestPlayer.cpp">
+      <Filter>system\!Test\!Player</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapData.cpp">
+      <Filter>system\map\MapData</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapLoader.cpp">
+      <Filter>system\map\MapLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapRender.cpp">
+      <Filter>system\map\MapRender</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapResHandle.cpp">
+      <Filter>system\map\ResourceHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="library\tinyxml12\tinyxml2.cpp">
+      <Filter>system\tinyxml12</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Camera.cpp">
+      <Filter>system\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapManager.cpp">
+      <Filter>system\map\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Player.cpp">
+      <Filter>Game\GameObjects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="program\moveSystem.cpp">
+      <Filter>system\ECS\Component\system</Filter>
+    </ClCompile>
+    <ClCompile Include="program\InputMoveComp.cpp">
+      <Filter>Game\GameObjects\Player\move</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PlayerStateController.cpp">
+      <Filter>Game\GameObjects\Player\state</Filter>
+    </ClCompile>
+    <ClCompile Include="program\JumpComp.cpp">
+      <Filter>Game\GameObjects\Player\jump</Filter>
+    </ClCompile>
+    <ClCompile Include="program\dive wire.cpp">
+      <Filter>Game\GameObjects\Player\dive wire</Filter>
+    </ClCompile>
+    <ClCompile Include="program\DiveWireController.cpp">
+      <Filter>Game\GameObjects\Player\dive wire</Filter>
+    </ClCompile>
+    <ClCompile Include="program\sword.cpp">
+      <Filter>Game\GameObjects\Player\sword</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Anim2D.cpp">
+      <Filter>system\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PlayerRender.cpp">
+      <Filter>Game\GameObjects\Player\DrawMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PlayerUi.cpp" />
+    <ClCompile Include="program\ui_health.cpp">
+      <Filter>Game\GameObjects\Player\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Boss.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="program\BossStateController.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\state</Filter>
+    </ClCompile>
+    <ClCompile Include="program\BossRender.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="program\BossLaser.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Scythe.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Sickle</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Particle .cpp">
+      <Filter>system\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Title.cpp">
+      <Filter>system\scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="program\TutorialScene.cpp">
+      <Filter>system\scene\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Hit.cpp">
+      <Filter>system\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="program\BossScene.cpp">
+      <Filter>system\scene\BossStage</Filter>
+    </ClCompile>
+    <ClCompile Include="program\StandingBot.cpp">
+      <Filter>Game\GameObjects\Enemy\StandBot</Filter>
+    </ClCompile>
+    <ClCompile Include="program\StandingBotRender.cpp">
+      <Filter>Game\GameObjects\Enemy\StandBot\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="program\HitBOxRenderComp.cpp">
+      <Filter>Game\GameObjects\component\BoxRender</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PointSaver.cpp">
+      <Filter>system\PointSaver</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Gun.cpp">
+      <Filter>Game\GameObjects\Player\Gun</Filter>
+    </ClCompile>
+    <ClCompile Include="program\SwingWire.cpp">
+      <Filter>Game\GameObjects\Player\SwingWIre</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{84f11f51-fa9d-44d9-ac13-62b931106c74}</ProjectGuid>
+    <RootNamespace>DxlibBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Wire Action</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>library\dxlib;library\cereal;library\tinyxml12</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>library\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>library\dxlib;library\cereal;library\tinyxml12</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>library\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>library\dxlib;library\cereal;library\tinyxml12</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>library\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>library\dxlib;library\cereal;library\tinyxml12</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>library\dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="program\Anim2D.h" />
+    <ClInclude Include="program\Boss.h" />
+    <ClInclude Include="program\BossLaser.h" />
+    <ClInclude Include="program\BossRender.h" />
+    <ClInclude Include="program\BossScene.h" />
+    <ClInclude Include="program\BossState.h" />
+    <ClInclude Include="program\BossStateController.h" />
+    <ClInclude Include="program\BoxButton.h" />
+    <ClInclude Include="program\Camera.h" />
+    <ClInclude Include="program\Circle.h" />
+    <ClInclude Include="program\ColliderComp.h" />
+    <ClInclude Include="program\Color.h" />
+    <ClInclude Include="program\Component.h" />
+    <ClInclude Include="program\debugDef.h" />
+    <ClInclude Include="program\DebugLog.h" />
+    <ClInclude Include="program\DebugScene.h" />
+    <ClInclude Include="program\DebugSceneNum.h" />
+    <ClInclude Include="program\dive wire.h" />
+    <ClInclude Include="program\DiveWireController.h" />
+    <ClInclude Include="program\DrawableComp.h" />
+    <ClInclude Include="program\Goal.h" />
+    <ClInclude Include="program\Gun.h" />
+    <ClInclude Include="program\health.h" />
+    <ClInclude Include="program\Hit.h" />
+    <ClInclude Include="program\HitBOxRenderComp.h" />
+    <ClInclude Include="program\NormalEnemy.h" />
+    <ClInclude Include="program\Particle .h" />
+    <ClInclude Include="program\PlayerRender.h" />
+    <ClInclude Include="program\flag.h" />
+    <ClInclude Include="program\GameManager.h" />
+    <ClInclude Include="program\GameObject.h" />
+    <ClInclude Include="program\GameObjectMgr.h" />
+    <ClInclude Include="program\GameObjectTag.h" />
+    <ClInclude Include="program\GetColor.h" />
+    <ClInclude Include="program\hp.h" />
+    <ClInclude Include="program\input.h" />
+    <ClInclude Include="program\InputMoveComp.h" />
+    <ClInclude Include="program\JumpComp.h" />
+    <ClInclude Include="program\MapData.h" />
+    <ClInclude Include="program\MapLoader.h" />
+    <ClInclude Include="program\MapManager.h" />
+    <ClInclude Include="program\MapRender.h" />
+    <ClInclude Include="program\MapResHandle.h" />
+    <ClInclude Include="program\moveSystem.h" />
+    <ClInclude Include="program\Player.h" />
+    <ClInclude Include="program\PlayerState.h" />
+    <ClInclude Include="program\PlayerStateController.h" />
+    <ClInclude Include="program\PlayerUi.h" />
+    <ClInclude Include="program\PointSaver.h" />
+    <ClInclude Include="program\Rect.h" />
+    <ClInclude Include="program\RigidbodyComp.h" />
+    <ClInclude Include="program\power.h" />
+    <ClInclude Include="program\Random.h" />
+    <ClInclude Include="program\RemFPS.h" />
+    <ClInclude Include="program\SaveData.h" />
+    <ClInclude Include="program\sceneBase.h" />
+    <ClInclude Include="program\Scythe.h" />
+    <ClInclude Include="program\singleton.h" />
+    <ClInclude Include="program\Sound.h" />
+    <ClInclude Include="program\SoundPathTable .h" />
+    <ClInclude Include="program\SoundResource.h" />
+    <ClInclude Include="program\SoundResourceMng.h" />
+    <ClInclude Include="program\SoundManager.h" />
+    <ClInclude Include="program\SoundType.h" />
+    <ClInclude Include="program\StandingBot.h" />
+    <ClInclude Include="program\StandingBotRender.h" />
+    <ClInclude Include="program\StandingFactory.h" />
+    <ClInclude Include="program\StatusAlias.h" />
+    <ClInclude Include="program\SwingWire.h" />
+    <ClInclude Include="program\sword.h" />
+    <ClInclude Include="program\SwordController.h" />
+    <ClInclude Include="program\SystemConfig.h" />
+    <ClInclude Include="program\tag.h" />
+    <ClInclude Include="program\TestPlayer.h" />
+    <ClInclude Include="program\TextureResource.h" />
+    <ClInclude Include="program\TextureResourceMng.h" />
+    <ClInclude Include="program\Tile.h" />
+    <ClInclude Include="program\Time.h" />
+    <ClInclude Include="program\Title.h" />
+    <ClInclude Include="program\trailbeam.h" />
+    <ClInclude Include="program\transform.h" />
+    <ClInclude Include="program\TutorialScene.h" />
+    <ClInclude Include="program\ui_health.h" />
+    <ClInclude Include="program\vector2d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="library\tinyxml12\tinyxml2.cpp" />
+    <ClCompile Include="program\Anim2D.cpp" />
+    <ClCompile Include="program\Boss.cpp" />
+    <ClCompile Include="program\BossLaser.cpp" />
+    <ClCompile Include="program\BossRender.cpp" />
+    <ClCompile Include="program\BossScene.cpp" />
+    <ClCompile Include="program\BossStateController.cpp" />
+    <ClCompile Include="program\Camera.cpp" />
+    <ClCompile Include="program\Color.cpp" />
+    <ClCompile Include="program\DebugScene.cpp" />
+    <ClCompile Include="program\dive wire.cpp" />
+    <ClCompile Include="program\DiveWireController.cpp" />
+    <ClCompile Include="program\GameManager.cpp" />
+    <ClCompile Include="program\GameObject.cpp" />
+    <ClCompile Include="program\Gun.cpp" />
+    <ClCompile Include="program\Hit.cpp" />
+    <ClCompile Include="program\HitBOxRenderComp.cpp" />
+    <ClCompile Include="program\input.cpp" />
+    <ClCompile Include="program\InputMoveComp.cpp" />
+    <ClCompile Include="program\JumpComp.cpp" />
+    <ClCompile Include="program\MapData.cpp" />
+    <ClCompile Include="program\MapLoader.cpp" />
+    <ClCompile Include="program\MapManager.cpp" />
+    <ClCompile Include="program\MapRender.cpp" />
+    <ClCompile Include="program\MapResHandle.cpp" />
+    <ClCompile Include="program\moveSystem.cpp" />
+    <ClCompile Include="program\Particle .cpp" />
+    <ClCompile Include="program\Player.cpp" />
+    <ClCompile Include="program\PlayerRender.cpp" />
+    <ClCompile Include="program\PlayerStateController.cpp" />
+    <ClCompile Include="program\PlayerUi.cpp" />
+    <ClCompile Include="program\PointSaver.cpp" />
+    <ClCompile Include="program\RigidbodyComp.cpp" />
+    <ClCompile Include="program\Scythe.cpp" />
+    <ClCompile Include="program\Sound.cpp" />
+    <ClCompile Include="program\SoundManager.cpp" />
+    <ClCompile Include="program\StandingBot.cpp" />
+    <ClCompile Include="program\StandingBotRender.cpp" />
+    <ClCompile Include="program\SwingWire.cpp" />
+    <ClCompile Include="program\sword.cpp" />
+    <ClCompile Include="program\TestPlayer.cpp" />
+    <ClCompile Include="program\Title.cpp" />
+    <ClCompile Include="program\transform.cpp" />
+    <ClCompile Include="program\TutorialScene.cpp" />
+    <ClCompile Include="program\ui_health.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
