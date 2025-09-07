@@ -9,6 +9,7 @@
 #include "GameManager.h"
 #include "TutorialScene.h"
 #include "BossScene.h"
+#include "InGameScene.h"
 
 void SCTitle::DrawStr()
 {
@@ -54,7 +55,7 @@ void SCTitle::MenuSelect()
             {
             case START:
                 //  スクリーンのポインタ変更をする
-                GameManager::Instance().CreateScene<Tutorial>();
+                GameManager::Instance().CreateScene<InGameScene>();
                 break;
             case BOSSDEBUG:
                 GameManager::Instance().CreateScene<BossStage>();

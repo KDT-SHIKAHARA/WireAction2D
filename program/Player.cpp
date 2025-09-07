@@ -15,12 +15,24 @@
 #include"health.h"
 #include"Gun.h"
 #include "SwingWire.h"
+#include"ColliderEvent.h"
+#include"PointSaver.h"
+
+
+Player::Player() :state(PlayerState::idle)
+{
+}
 
 /// <summary>
 /// ‰Šú‰»
 /// </summary>
-Player::Player():state(PlayerState::idle)
+Player::Player(int num):state(PlayerState::idle)
 {
+	auto filePath = posFile + std::to_string(num) + ".txt";
+	auto pos = PointSaver::Instance().GetPoints(filePath);
+	for (const auto& p : pos) {
+		transform.SetPosition(p);
+	}
 
 }
 
@@ -29,7 +41,9 @@ Player::Player():state(PlayerState::idle)
 /// </summary>
 void Player::SetComponent()
 {
-	transform.SetPosition(Vector2D<float>(500, 100));
+
+
+	//transform.SetPosition(Vector2D<float>(500, 100));
 	auto rigid = AddComponent<RigidbodyComp>();	//	•¨—
 	auto collider = AddComponent<ColliderComp>(Vector2D<float>{ 50, 70 });
 	auto input = AddComponent<InputMove>();		//	“ü—ÍˆÚ“®
@@ -46,10 +60,11 @@ void Player::SetComponent()
 
 	auto anim = AddComponent<PlayerAnim>();
 	anim->Initialize(state, input);
-	auto health = AddComponent<Health>(1);
-	auto ui_health = AddComponent<UiPlayerHp>();
+	AddComponent<ColliderEvent>();
+	//auto health = AddComponent<Health>(1);
+	//auto ui_health = AddComponent<UiPlayerHp>();
 	//AddComponent<Gun>();
-	ui_health->Set(health);
+	//ui_health->Set(health);
 	//AddComponent<Sword>();
 	SetTag(Tag::GetString(TagType::Player));
 	SortLayer();	//	layer‚Ìƒ\[ƒg

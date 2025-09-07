@@ -29,6 +29,8 @@ public:
 		scenePtr = std::make_unique<T>();
 	}
 
+	
+
 	//	ƒQ[ƒ€ƒ‹[ƒv
 	void GameLoop();
 };

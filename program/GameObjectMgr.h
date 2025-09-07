@@ -53,6 +53,10 @@ public:
 		}
 	}
 
+	void AllDestroyedGameObjects() {
+		gameObjs_.clear();
+	}
+
 	const GameObjList& GetGameObjList()const { return gameObjs_; }
 
 	/// <summary>

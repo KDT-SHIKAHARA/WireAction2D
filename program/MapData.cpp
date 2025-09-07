@@ -28,7 +28,9 @@ void MapData::LoadMapData(const std::string& filePath){
 /// <param name="arg_y"> 第一要素数のインデックス </param>
 /// <returns></returns>
 const Tile& MapData::GetTile(int index_x, int index_y) const {
-	if (index_x < 0 || index_y < 0 || index_x >= map_max_w_ || index_y >= map_max_h_) throw std::out_of_range("MapData::GetTile index over ");
-	if (index_x < 0 || index_y < 0 || index_x >= map_max_w_ || index_y >= map_max_h_) return Tile{};
+	if (index_x < 0 || index_y < 0 || index_x >= map_max_w_ || index_y >= map_max_h_)
+	{
+		return Tile{};
+	}
 	return  tiles_[index_y][index_x];
 }

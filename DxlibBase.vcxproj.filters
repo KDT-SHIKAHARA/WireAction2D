@@ -248,6 +248,21 @@
     <Filter Include="Game\GameObjects\Player\SwingWIre">
       <UniqueIdentifier>{5893d729-9102-4c01-9105-02511cc265e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\CheckHit">
+      <UniqueIdentifier>{286df712-4512-4920-8ec8-91e7bd917dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\component\event">
+      <UniqueIdentifier>{4b2e8831-0155-41a6-b2d6-361fbb08b78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\scene\InGame">
+      <UniqueIdentifier>{b8629be0-d328-42d5-b87e-03112074c057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\needle">
+      <UniqueIdentifier>{1fb41d76-40d9-44aa-8f62-e449334b0908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Function">
+      <UniqueIdentifier>{b7398e94-2e35-4b21-a602-ffde7cdad5a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -502,6 +517,30 @@
     <ClInclude Include="program\SwingWire.h">
       <Filter>Game\GameObjects\Player\SwingWIre</Filter>
     </ClInclude>
+    <ClInclude Include="program\ColliderSystem.h">
+      <Filter>system\ECS\Component\collider</Filter>
+    </ClInclude>
+    <ClInclude Include="program\CollisionRule.h">
+      <Filter>system\ECS\Component\collider</Filter>
+    </ClInclude>
+    <ClInclude Include="program\CheckHit.h">
+      <Filter>system\CheckHit</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ColliderEvent.h">
+      <Filter>Game\GameObjects\component\event</Filter>
+    </ClInclude>
+    <ClInclude Include="program\InGameScene.h">
+      <Filter>system\scene\InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Needle.h">
+      <Filter>Game\GameObjects\needle</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DrawRap.h">
+      <Filter>system\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DrawGraphComp.h">
+      <Filter>Game\GameObjects\component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -637,5 +676,18 @@
     <ClCompile Include="program\SwingWire.cpp">
       <Filter>Game\GameObjects\Player\SwingWIre</Filter>
     </ClCompile>
+    <ClCompile Include="program\ColliderSystem.cpp">
+      <Filter>system\ECS\Component\collider</Filter>
+    </ClCompile>
+    <ClCompile Include="program\InGameScene.cpp">
+      <Filter>system\scene\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Needle.cpp">
+      <Filter>Game\GameObjects\needle</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Goal.cpp">
+      <Filter>Game\GameObjects\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="program\DrawGraphComp.cpp" />
   </ItemGroup>
 </Project>

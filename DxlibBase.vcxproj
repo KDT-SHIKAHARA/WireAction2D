@@ -157,8 +157,12 @@
     <ClInclude Include="program\BossStateController.h" />
     <ClInclude Include="program\BoxButton.h" />
     <ClInclude Include="program\Camera.h" />
+    <ClInclude Include="program\CheckHit.h" />
     <ClInclude Include="program\Circle.h" />
     <ClInclude Include="program\ColliderComp.h" />
+    <ClInclude Include="program\ColliderEvent.h" />
+    <ClInclude Include="program\ColliderSystem.h" />
+    <ClInclude Include="program\CollisionRule.h" />
     <ClInclude Include="program\Color.h" />
     <ClInclude Include="program\Component.h" />
     <ClInclude Include="program\debugDef.h" />
@@ -168,11 +172,14 @@
     <ClInclude Include="program\dive wire.h" />
     <ClInclude Include="program\DiveWireController.h" />
     <ClInclude Include="program\DrawableComp.h" />
+    <ClInclude Include="program\DrawGraphComp.h" />
     <ClInclude Include="program\Goal.h" />
     <ClInclude Include="program\Gun.h" />
     <ClInclude Include="program\health.h" />
     <ClInclude Include="program\Hit.h" />
     <ClInclude Include="program\HitBOxRenderComp.h" />
+    <ClInclude Include="program\InGameScene.h" />
+    <ClInclude Include="program\Needle.h" />
     <ClInclude Include="program\NormalEnemy.h" />
     <ClInclude Include="program\Particle .h" />
     <ClInclude Include="program\PlayerRender.h" />
@@ -232,6 +239,7 @@
     <ClInclude Include="program\TutorialScene.h" />
     <ClInclude Include="program\ui_health.h" />
     <ClInclude Include="program\vector2d.h" />
+    <ClInclude Include="program\DrawRap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="library\tinyxml12\tinyxml2.cpp" />
@@ -242,15 +250,19 @@
     <ClCompile Include="program\BossScene.cpp" />
     <ClCompile Include="program\BossStateController.cpp" />
     <ClCompile Include="program\Camera.cpp" />
+    <ClCompile Include="program\ColliderSystem.cpp" />
     <ClCompile Include="program\Color.cpp" />
     <ClCompile Include="program\DebugScene.cpp" />
     <ClCompile Include="program\dive wire.cpp" />
     <ClCompile Include="program\DiveWireController.cpp" />
+    <ClCompile Include="program\DrawGraphComp.cpp" />
     <ClCompile Include="program\GameManager.cpp" />
     <ClCompile Include="program\GameObject.cpp" />
+    <ClCompile Include="program\Goal.cpp" />
     <ClCompile Include="program\Gun.cpp" />
     <ClCompile Include="program\Hit.cpp" />
     <ClCompile Include="program\HitBOxRenderComp.cpp" />
+    <ClCompile Include="program\InGameScene.cpp" />
     <ClCompile Include="program\input.cpp" />
     <ClCompile Include="program\InputMoveComp.cpp" />
     <ClCompile Include="program\JumpComp.cpp" />
@@ -260,6 +272,7 @@
     <ClCompile Include="program\MapRender.cpp" />
     <ClCompile Include="program\MapResHandle.cpp" />
     <ClCompile Include="program\moveSystem.cpp" />
+    <ClCompile Include="program\Needle.cpp" />
     <ClCompile Include="program\Particle .cpp" />
     <ClCompile Include="program\Player.cpp" />
     <ClCompile Include="program\PlayerRender.cpp" />

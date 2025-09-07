@@ -16,7 +16,7 @@ public:
 	void Update();
 
 	//	データ内のやつを作る
-	std::vector<Vector2Di> GetPoints(const std::string& filePath);
+	std::vector<Vector2Df> GetPoints(const std::string& filePath);
 
 private:
 	//	入力のファイルパスのテーブル

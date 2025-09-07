@@ -1,6 +1,7 @@
 #pragma once
 #include"Component.h"
 #include"vector2d.h"
+#include"flag.h"
 
 /// <summary>
 /// “–‚½‚è”»’è‚É•K—v‚Èî•ñ‚ğæ“¾‚·‚é
@@ -14,4 +15,6 @@ public:
 	Vector2D<float> size() const { return size_; }
 	void Update()override{}
 
+	Flag isActive = true;
+	Flag isPush = true;
 };

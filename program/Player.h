@@ -15,6 +15,7 @@ class Player :public GameObject {
 	PlayerState state;
 public:
 	Player();
+	Player(int num);
 	virtual ~Player() = default;
 
 	//	コンポーネント追加
@@ -24,6 +25,6 @@ public:
 	void Update()override;
 	void Render()override;
 
-
-
+private:
+	std::string posFile = "res/player/pos/";
 };

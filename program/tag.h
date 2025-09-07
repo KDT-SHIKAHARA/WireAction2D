@@ -5,6 +5,8 @@
 enum class TagType {
 	Player,
 	Enemy,
+	Needle,
+	Goal,
 	None,
 };
 
@@ -14,6 +16,8 @@ public:
 		static const std::unordered_map<TagType, std::string> typeMap{
 			{TagType ::Player,"Player"},
 			{TagType ::Enemy,"Enemy"},
+			{TagType::Needle,"Needle"},
+			{TagType::Goal,"Goal"},
 			{TagType ::None,"None"},
 		};
 

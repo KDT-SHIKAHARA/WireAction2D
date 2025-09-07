@@ -4,6 +4,7 @@
 #include"moveSystem.h"
 #include"Camera.h"
 #include"PointSaver.h"
+#include"ColliderSystem.h"
 
 class Scene {
 public:
@@ -14,6 +15,7 @@ public:
 		Camera::Instance().Update();
 		MapManager::Instance().CheckCollision(GameObjMgr::Instance().GetGameObjList());
 		MoveSystem::Instance().Update(GameObjMgr::Instance().GetGameObjList());
+		ColliderSystem::Instance().Update();
 #ifdef _DEBUG
 		PointSaver::Instance().Update();
 #endif // _DEBUG

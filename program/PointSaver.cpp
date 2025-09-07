@@ -31,7 +31,9 @@ void PointSaver::Log(const std::string& filePath)
 
 PointSaver::PointSaver()
 {
-	path_table_[KEY_INPUT_1] = "res/enemy/StandBots.txt";
+	path_table_[KEY_INPUT_1] = "res/needle/pos1.txt";
+    path_table_[KEY_INPUT_2] = "res/goal/pos1.txt";
+    path_table_[KEY_INPUT_3] = "res/player/pos/1.txt";
 }
 
 void PointSaver::Update()
@@ -46,10 +48,10 @@ void PointSaver::Update()
 
 }
 
-std::vector<Vector2Di> PointSaver::GetPoints(const std::string& filePath)
+std::vector<Vector2Df> PointSaver::GetPoints(const std::string& filePath)
 {
 
-    std::vector<Vector2Di> points;
+    std::vector<Vector2Df> points;
     std::ifstream ifs(filePath);
     if (!ifs) {
         // äJÇØÇ»Ç©Ç¡ÇΩèÍçáÇÕãÛÇÃvectorÇï‘Ç∑
@@ -61,7 +63,7 @@ std::vector<Vector2Di> PointSaver::GetPoints(const std::string& filePath)
         std::istringstream iss(line);
         std::string sx, sy;
         if (std::getline(iss, sx, ',') && std::getline(iss, sy)) {
-            Vector2Di pt = { std::stoi(sx), std::stoi(sy) };
+            Vector2Df pt = { std::stof(sx), std::stof(sy) };
             points.push_back(pt);
         }
     }
