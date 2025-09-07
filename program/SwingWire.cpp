@@ -98,6 +98,7 @@ void SwingWire::CalculateSwing()
     // 前フレームの位置との差分で速度計算
     Vector2Df velocity = (targetPos - objPos_) / dt;
 
+
     // Rigidbody に速度セット
     if (rigidBody_) {
         rigidBody_->SetVelocity(velocity);

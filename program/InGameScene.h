@@ -25,8 +25,8 @@ private:
 	std::shared_ptr<TextureResource> grave_;
 	std::shared_ptr<Player> player_;
 	std::shared_ptr<GameObject> goal_;
-	int stageNumber = 1;
-	const int max_stateNum = 1;
+	int stageNumber;
+	const int max_stateNum = 2;
 	int resetCount = 0;
 	std::string mapDataFile;
 	bool isResult = false;

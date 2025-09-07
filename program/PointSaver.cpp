@@ -31,9 +31,9 @@ void PointSaver::Log(const std::string& filePath)
 
 PointSaver::PointSaver()
 {
-	path_table_[KEY_INPUT_1] = "res/needle/pos1.txt";
-    path_table_[KEY_INPUT_2] = "res/goal/pos1.txt";
-    path_table_[KEY_INPUT_3] = "res/player/pos/1.txt";
+	path_table_[KEY_INPUT_1] = "res/needle/pos2.txt";
+    path_table_[KEY_INPUT_2] = "res/goal/pos2.txt";
+    path_table_[KEY_INPUT_3] = "res/player/pos/2.txt";
 }
 
 void PointSaver::Update()
