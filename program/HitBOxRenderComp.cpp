@@ -6,6 +6,11 @@
 
 void HitBoxRenderComp::Render()
 {
+
+#ifdef _DEBUG
+
+
+
 	//	必要なコンポー年tpがあるかどうかの判定
 	if (!GetGameObj()->GetComponent<ColliderComp>())return;
 
@@ -24,5 +29,6 @@ void HitBoxRenderComp::Render()
 
 	DrawBoxAA(draw.x, draw.y, draw.x + size.x, draw.y + size.y,
 		RED, FALSE);
+#endif // _DEBUG
 
 }
