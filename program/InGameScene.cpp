@@ -17,7 +17,7 @@
 //	‰Šú‰»
 //	ˆê‰ñ‰Šú‰»‚µ‚È‚¢‚à‚Ì‚à‚±‚±
 InGameScene::InGameScene() {
-	stageNumber = 1;
+	stageNumber = 2;
 	resetCount = 0;
 	bg_filePath_ = "res/map/texture/bg.jpg";
 	bg_ = TextureResourceMgr::Instance().GetTexture(bg_filePath_);
