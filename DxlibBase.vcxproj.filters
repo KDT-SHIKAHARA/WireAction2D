@@ -541,6 +541,9 @@
     <ClInclude Include="program\DrawGraphComp.h">
       <Filter>Game\GameObjects\component</Filter>
     </ClInclude>
+    <ClInclude Include="program\explanation.h">
+      <Filter>system\scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -689,5 +692,8 @@
       <Filter>Game\GameObjects\Goal</Filter>
     </ClCompile>
     <ClCompile Include="program\DrawGraphComp.cpp" />
+    <ClCompile Include="program\explanation.cpp">
+      <Filter>system\scene</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
